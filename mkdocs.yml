@@ -6,7 +6,7 @@ theme:
 
 nav:
   - Overview:
-      - Retool: "comparisons/retool.md"
+      - Hi: "comparisons/retool.md"
       - Retool: "index.md"
   - Quick Start:
       - Retool: "comparisons/retool.md"
