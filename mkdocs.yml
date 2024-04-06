@@ -1,3 +1,20 @@
-site_name: My Docs
+site_name: Flank
 theme:
   name: material
+  features:
+    - navigation.expand
+
+nav:
+  - Overview:
+      - Retool: "comparisons/retool.md"
+      - Retool: "index.md"
+  - Quick Start:
+      - Retool: "comparisons/retool.md"
+      - Retool: "index.md"
+  - Comparisons:
+      - Retool: "comparisons/retool.md"
+      - Postman: "index.md"
+      - Custom Build: "index.md"
+  - Integrations:
+      - Retool: "comparisons/retool.md"
+      - Retool: "index.md"
