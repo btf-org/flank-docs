@@ -5,16 +5,26 @@ theme:
     - navigation.expand
 
 nav:
-  - Overview:
-      - Hi: "comparisons/retool.md"
-      - Retool: "index.md"
-  - Quick Start:
-      - Retool: "comparisons/retool.md"
-      - Retool: "index.md"
+  - Why Flank: "motivations.md"
+  - Existing tools didn't solve our problem: "existing.md"
   - Comparisons:
+      - "Flowchart of Comparisons": "comparisons/master-flowchart.md"
       - Retool: "comparisons/retool.md"
-      - Postman: "index.md"
-      - Custom Build: "index.md"
+      - Postman: "comparisons/postman.md"
+      - Swagger UI / OpenAPI: "comparisons/swagger.md"
+      - Zapier: "comparisons/zapier.md"
+      - "Tableau, Power BI, Looker": "comparisons/bi.md"
+      - "Streamlit": "comparisons/streamlit.md"
+      - "PopSQL": "comparisons/popsql.md"
+      - "Metabase": "comparisons/metabase.md"
+      - "React, etc": "comparisons/custom.md"
+  - Quick Start: "quickstart.md"
   - Integrations:
-      - Retool: "comparisons/retool.md"
-      - Retool: "index.md"
+      - SQL Server: "integrations/mssql.md"
+      - REST APIs: "integrations/rest.md"
+      - AWS Lambda: "integrations/lambda.md"
+      - Azure Function Apps: "integrations/az-functions.md"
+  - More:
+      - Features and Benefits: "features.md"
+      - Design Decisions and Tradeoffs: "tradeoffs.md"
+      - Miscellaneous: "miscellaneous.md"

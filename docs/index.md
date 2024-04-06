@@ -1,19 +1,11 @@
-# Comparisons
+# Flank
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Flank is a really simple and really scalable way to build business software — dashboards, internal tools, simple automations, BI, admin panels.
 
-## Comparisons
+[It is motivated by our own experience](motivations.md), where, as engineers, we were relied upon to urgently fix things all the time.
 
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
+It might sound like we’re boiling the ocean, but Flank is a small and simple tool. We've really focused on three areas:
 
-### Retool
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- Speed
+- Simplicity
+- Scaling
