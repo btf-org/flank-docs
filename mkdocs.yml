@@ -1,12 +1,13 @@
 site_name: Flank
 theme:
   name: material
-  features:
-    - navigation.expand
 
 nav:
-  - Why Flank: "motivations.md"
-  - Existing tools didn't solve our problem: "existing.md"
+  - Home: "index.md"
+  - Why Flank:
+      - Initial Motivations: "motivations.md"
+      - Existing tools didn't solve our problem: "existing.md"
+      - Goals and Core Concepts: "goals.md"
   - Comparisons:
       - "Flowchart of Comparisons": "comparisons/master-flowchart.md"
       - Retool: "comparisons/retool.md"
@@ -19,6 +20,8 @@ nav:
       - "Metabase": "comparisons/metabase.md"
       - "React, etc": "comparisons/custom.md"
   - Quick Start: "quickstart.md"
+  - Use Cases:
+      - "Turn a data request into a permament tool": "use-cases/one-off.md"
   - Integrations:
       - SQL Server: "integrations/mssql.md"
       - REST APIs: "integrations/rest.md"
