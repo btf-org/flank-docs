@@ -1,0 +1,6 @@
+- Run `$ mkdocs serve -a localhost:8888`
+- View it at http://localhost:8888 locally
+- `mkdocs.yml` control the navigation
+- Everything is a markdown file whose path is relative to the `/docs` folder
+- Just commit and push to `main` branch to trigger a rebuild
+- Published here - https://btf-org.github.io/flank-docs/
