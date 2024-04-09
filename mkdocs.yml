@@ -1,11 +1,13 @@
 site_name: Flank
 theme:
   name: material
+  features:
+    - navigation.footer
 
 nav:
   - Home: "index.md"
   - Why Flank:
-      - Initial Motivations: "motivations.md"
+      - Initial motivations: "motivations.md"
       - Existing tools didn't solve our problem: "existing.md"
       - Goals and Core Concepts: "goals.md"
   - Comparisons:
