@@ -1,9 +1,5 @@
 # Persistent grumblings
 
-In our past jobs, we built business software. Things like dashboards, automations, internal products, tools, and admin panels. 
-
-We had three takeaways from that experience...
-
 ## Urgent requests
 
 *AKA burning TF out as the fix-it guy.*

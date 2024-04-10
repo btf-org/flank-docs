@@ -28,8 +28,7 @@ nav:
       - "PopSQL": "comparisons/popsql.md"
       - "Metabase": "comparisons/metabase.md"
       - "React, etc": "comparisons/custom.md"
-  - Quick Start: 
-    - FastAPI + Jupyter: "quickstarts/jupyter-fastapi.md"
+  - Quick Start: "quickstarts/jupyter-fastapi.md"
   - Use Cases:
       - "Turn a data request into a permament tool": "use-cases/one-off.md"
   - Integrations:
