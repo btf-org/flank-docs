@@ -74,7 +74,9 @@ Go to **Create Resource** and choose **API**. Choose **Add your own API**. Paste
 Remember, your docs endpoint should be something like `https://fafc-216-228-186-15.ngrok-free.app/openapi.json`.
 
 ### 5. Sync your endpoint
-Now, you can sync your endpoint. Syncing just means Flank automatically finding 
+Now, you can sync your endpoint. Syncing just means Flank automatically finds the endpoints in your API. You can pick and choose the ones you'd like to add.
+
+![Sync resource in Flank](imgs/sync-resource.gif)
 
 ### 6. Run it, share it, Flank it
 
