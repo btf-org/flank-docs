@@ -1,9 +1,10 @@
 site_name: Flank
 theme:
   name: material
-  logo: "assets/flank-logo.jpeg"
+  logo: 
   palette:
     primary: deep purple
+  favicon: "assets/flank-logo.jpeg"   
   features:
     - navigation.footer
 markdown_extensions:
