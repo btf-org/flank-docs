@@ -3,6 +3,9 @@ theme:
   name: material
   features:
     - navigation.footer
+markdown_extensions:
+  - attr_list
+  - md_in_html
 
 nav:
   - Home: "index.md"
@@ -21,7 +24,8 @@ nav:
       - "PopSQL": "comparisons/popsql.md"
       - "Metabase": "comparisons/metabase.md"
       - "React, etc": "comparisons/custom.md"
-  - Quick Start: "quickstart.md"
+  - Quick Start: 
+    - FastAPI + Jupyter: "quickstarts/jupyter-fastapi.md"
   - Use Cases:
       - "Turn a data request into a permament tool": "use-cases/one-off.md"
   - Integrations:
