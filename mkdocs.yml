@@ -14,9 +14,9 @@ markdown_extensions:
 nav:
   - Home: "index.md"
   - Why Flank:
-      - Initial motivations: "motivations.md"
-      - Existing tools didn't solve our problem: "existing.md"
-      - Goals and Core Concepts: "goals.md"
+      - Persistent grumblings: "motivations.md"
+      - A modest MVP: "v1.md"
+      - Unexpected benefits: "unexpected.md"
   - Comparisons:
       - "Flowchart of Comparisons": "comparisons/master-flowchart.md"
       - Retool: "comparisons/retool.md"

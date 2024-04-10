@@ -1,8 +1,10 @@
 # Postman
 
-Postman is a tool for engineering teams to develop and test APIs. Flank is a tool for engineers to quickly build business applications for end users.
+Postman is a tool for engineering teams to develop and test APIs. It's similar to Flank in that they both sit on top existing code/services and don't house any app logic themselves.
 
-They're similar in that they both sit on top existing code/services and don't house any app logic themselves.
+The big difference is that Postman is intended to be used by engineers. With Flank, the goal is for the engineer to use the app *as little as possible*. Flank is just a way to get functionality in the hands of a business user.
+
+Postman is a good tool. Recommend.
 
 |                      | Flank                                                                                                           | Postman                                                |
 | -------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |

@@ -1,6 +1,6 @@
 # Retool
 
-Retool and Flank are both general purpose tools for building business software. Retool is great for building rich UIs really quickly, Flank is great for releasing features with the least amount of process and UI.
+Retool and Flank are both general purpose tools for building business software. If you need to build rich UIs and interactive apps, use Retool. We introduced Retool at past jobs, and we highly recommend it. Flank, on the other hand, is useful for turning ad-hoc queries and API endpoints into zero-maintenance tools. 
 
 |                      | Flank                                                                        | Retool                                                                                                           |
 | -------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
