@@ -19,7 +19,7 @@ nav:
       - Unexpected benefits: "unexpected.md"
   - Comparisons:
       - "Flowchart of Comparisons": "comparisons/master-flowchart.md"
-      - Retool: "comparisons/retool.md"
+      - Retool, PowerApps: "comparisons/retool.md"
       - Postman: "comparisons/postman.md"
       - Swagger UI / OpenAPI: "comparisons/swagger.md"
       - Zapier: "comparisons/zapier.md"
