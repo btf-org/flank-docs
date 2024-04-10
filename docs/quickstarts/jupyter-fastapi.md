@@ -74,10 +74,21 @@ Go to **Create Resource** and choose **API**. Choose **Add your own API**. Paste
 Remember, your docs endpoint should be something like `https://fafc-216-228-186-15.ngrok-free.app/openapi.json`.
 
 ### 5. Sync your endpoint
-Now, you can sync your endpoint. Syncing just means Flank automatically finds the endpoints in your API. You can pick and choose the ones you'd like to add.
+Next, sync your endpoint. Syncing just means Flank automatically finds the endpoints in your API. You can pick and choose the ones you'd like to add.
 
 ![Sync resource in Flank](imgs/sync-resource.gif)
 
 ### 6. Run it, share it, Flank it
+Now, you've got a dedicated page webpage on which you can run your endpoint (we call these endpoints "commands" in Flank).
+
+Notice that Flank automatically found the parameters of your sales report endpoint. Flank will find parameters specified in API specs. 
+
+TODO - If you want to further configure the command, 
+TODO - Running
+TODO - Sharing
+TODO - Note about exposing beyond ngrok, adding more endpoints
+
+
+And share your endpoint...
 
 Run into problems? Email us at [mallory@flank.cloud](mailto:mallory@flank.cloud).
