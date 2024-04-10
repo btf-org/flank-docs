@@ -1,6 +1,9 @@
 site_name: Flank
 theme:
   name: material
+  logo: "assets/flank-logo.jpeg"
+  palette:
+    primary: deep purple
   features:
     - navigation.footer
 markdown_extensions:
