@@ -2,9 +2,9 @@
 
 Retool and Flank are both general purpose tools for building business software.
 
-If you need to build rich UIs and interactive apps, use Retool. We introduced Retool at past jobs, and we highly recommend it. (Haven't used PowerApps, can't recommend it...)
+Retool is great for **rich UIs** and **interactive apps**. We introduced Retool at past jobs, and we highly recommend it. (Haven't used PowerApps, can't recommend it...)
 
-Flank, on the other hand, is useful for turning ad-hoc queries and API endpoints into zero-maintenance tools. 
+Flank is great for building **lots of small tools**, where the UI just needs to look as good as a Google Form.
 
 
 |                      | Flank                                                                        | Retool                                                                                                           |

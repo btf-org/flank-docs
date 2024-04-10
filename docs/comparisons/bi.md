@@ -1,10 +1,11 @@
 # Tableau, PowerBI, Looker
 
-BI tools are used to build dashboards for executives. Basically, someone looking at a pretty visualization.
+BI tools and Flank can both be used to get data into the hands of the right business person.
 
-Flank is used to build quick-and-dirty functionality for *all* business people.
+BI tools are used to build **dashboards** for **executives**. Basically, someone looking at a **pretty visualization**.
 
-Phrased differently, BI tools read data. Flank can read data, but it can also be used to build tools that create, update, and delete data too (CRUD).  
+Flank is used to build **quick-and-dirty functionality** for ***all* business people**.
+
 
 |                      | Flank                                                                             | Tableau, Power BI, Looker                                                               |
 | -------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |

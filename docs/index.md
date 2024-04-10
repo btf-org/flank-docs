@@ -4,7 +4,7 @@ Flank is a really **simple** and really **scalable** way to build business softw
 
 It is **NOT** a tool for building custom websites, rich visualizations, or complicated interactions.
 
-[Check out the 5 min Quick Start]("quickstarts/jupyter-fastapi.md")
+[Build your first app in 5 minutes](quickstarts/jupyter-fastapi.md) 👉
 
 ## Background
 We were writing a lot of ad-hoc SQL queries and saving them in text files locally. Initially we wondered, *could we take those text files and turn them into reusable tools?*

@@ -1,8 +1,10 @@
 # Swagger UI / OpenAPI
 
-Swagger UI is a web page that is generated from an API specification (an OpenAPI spec, formerly known as a Swagger Spec). Flank is similar to Swagger UI in that it too autogerates UI.
+Swagger UI and Flank are similar in that they both autogenereate UI from backend code.
 
-The big difference is that Flank is designed for business applications -- it has RBAC, guardrails and everything else necessary to safely expose functionality to business users. Not to mention the ability to combine two endpoints to make a tool.
+Swagger UI is great for quickly **testing API endpoints**. It's like a quick-and-dirty [Postman](postman.md).
+
+Flank is used to **build business applications** -- it has RBAC, guardrails and everything else necessary to safely expose functionality to business users. Not to mention the ability to combine two endpoints to make a more sophisicated tool.
 
 |                      | Flank                                                                                                                   | SwaggerUI                                                            |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |

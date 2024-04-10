@@ -1,0 +1,1 @@
+# SPAs (React, Angular, Vue, etc.)

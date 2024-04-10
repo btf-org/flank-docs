@@ -1,8 +1,10 @@
 # Streamlit
 
-Streamlit is this amazing tool for turning a Python script into a interactive web app. It empowers data scientists to build sharable apps on their own, which removes their dependency on engineers. Highly recommend.
+Streamlit and Flank both empower a single engineer/data scientist to build a quick app without involving other people/process.
 
-Flank is also a tool for quickly building apps, but it's not for interactive data graphics. Also, it's not just for Python. And it's not a tool for building things. It just points at existing & hosted code and allows people to safely execute it.
+Streamlit is the amazing tool for **turning a Python script into a interactive web app**. It empowers **data scientists** to build sharable apps on their own, which removes their dependency on engineers. Highly recommend.
+
+Flank is a tool for **turning any "function" on the internet into a tool** ("function" = API endpoint, cloud function, stored proc). It empowers **all engineers** to release features without many of the burdens of the traditional development lifecycle.
 
 |                      | Flank                                                                                                         | Streamlit                                                                                                                |
 | -------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
