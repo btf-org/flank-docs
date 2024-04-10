@@ -4,9 +4,9 @@ Flank is a really **simple** and really **scalable** way to build business softw
 
 It is **NOT** a tool for building custom websites, rich visualizations, or complicated interactions.
 
-We named it *Flank* because we like to think that it out-**flanks** (ha) the typical development lifecycle. 
+We named it *Flank* because we like to think that it out*flanks* (ha) the typical development lifecycle. 
 
-Hope you enjoy!
+Scroll down for a 5-10 minute quickstart. 👇 Hope you enjoy!
 
 ## Background
 Our initial goal was to take all those ad-hoc SQL queries in text files on our computers and turn them into reusable tools.

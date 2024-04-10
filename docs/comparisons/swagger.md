@@ -4,7 +4,7 @@ Swagger UI is a web page that is generated from an API specification (an OpenAPI
 
 The big difference is that Flank is designed for business applications -- it has RBAC, guardrails and everything else necessary to safely expose functionality to business users. Not to mention the ability to combine two endpoints to make a tool.
 
-|                      | Flank                                                                                                                   | Postman                                                              |
+|                      | Flank                                                                                                                   | SwaggerUI                                                            |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | Used by              | Engineers and Business People                                                                                           | Just Engineers                                                       |
 | Problem it solves    | It's difficult to quickly and safely expose API functionality to business people                                        | Difficult to lookup API endpoints and make calls in the terminal     |
