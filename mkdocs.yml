@@ -13,10 +13,7 @@ markdown_extensions:
 
 nav:
   - Home: "index.md"
-  - Why Flank:
-      - Persistent grumblings: "motivations.md"
-      - A modest MVP: "v1.md"
-      - Unexpected benefits: "unexpected.md"
+  - Backstory: "background.md"
   - Comparisons:
       - "Flowchart of Comparisons": "comparisons/master-flowchart.md"
       - Retool, PowerApps: "comparisons/retool.md"
