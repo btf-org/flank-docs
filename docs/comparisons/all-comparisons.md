@@ -81,11 +81,11 @@ Flank is a tool for **any engineer** to **shortcut** the traditional development
 
 ### Postman
 
-Postmand and Flank are similar in that they both sit on top existing code/services and don't house any app logic themselves.
+Postman and Flank are similar in that they both sit on top existing code/services and don't house any app logic themselves.
 
-Postman is a great tool to have in your back pocket if you're **building and testing APIs**.
+Postman is a tool for **building and testing APIs** that's used by **engineers**.
 
-Flank is a tool to run an API endpoint **once it's built.** It's used to **safely expose functionality** to business people.
+Flank is a tool for quickly building **UI with guardrails** to put in front of **business people**.
 
 
 |                      | Flank                                                                                                           | Postman                                                |
