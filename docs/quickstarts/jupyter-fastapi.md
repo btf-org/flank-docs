@@ -101,14 +101,13 @@ You can choose to run your notebook in Google Colab, or with your command line a
 
     ### 2. Setup your venv and Jupyter
 
-    In your terminal, set up a python virtual env.
+    Open up your terminal and run the following to set up a python virtual env.
 
     ```
     python -m venv flankvenv
 
     . flankvenv/bin/activate
     ```
-    (SCREENSHOT)
 
     Now that your venv is activated, install and run jupyter notebook.
 
@@ -117,7 +116,6 @@ You can choose to run your notebook in Google Colab, or with your command line a
 
     jupyter notebook
     ```
-    (SCREENSHOT)
 
     This will open up a browser window with Jupyter running.
 
