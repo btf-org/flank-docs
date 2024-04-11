@@ -40,7 +40,7 @@ You can choose to run your notebook in Google Colab, or with your command line a
     import nest_asyncio
     import uvicorn
     from fastapi import FastAPI, Query
-    from pyngrok import ngrok
+    from pyngrok import ngrok, conf
     ```
 
 
@@ -68,7 +68,16 @@ You can choose to run your notebook in Google Colab, or with your command line a
         return {"error": "Sale not found"}
     ```
     ### 5. Run your API, and expose it on the web
-    We'll use `ngrok` to expose our API, and run it with `nest_asyncio` and `uvicorn`. You can choose any port on your localhost that's open. Here we'll run and expose the API on port 8010.
+    We'll use `ngrok` to expose our API, and run it with `nest_asyncio` and `uvicorn`. 
+    
+    First, copy and enter your ngrok api key, which can be found at [https://dashboard.ngrok.com/get-started/your-authtoken](https://dashboard.ngrok.com/get-started/your-authtoken).
+
+    ```
+    print("Enter your authtoken, which can be copied from https://dashboard.ngrok.com/get-started/your-authtoken")
+    conf.get_default().auth_token = getpass.getpass()
+    ```
+
+    Now we'll expose your endpoint to the web. You can choose any port on your localhost that's open. Here we'll run and expose the API on port 8010.
     ```
     ngrok_tunnel = ngrok.connect(8010)
     print('Public URL:', ngrok_tunnel.public_url)
@@ -142,7 +151,7 @@ You can choose to run your notebook in Google Colab, or with your command line a
     import nest_asyncio
     import uvicorn
     from fastapi import FastAPI, Query
-    from pyngrok import ngrok
+    from pyngrok import ngrok, conf
     ```
 
     ### 4. Set up your API
@@ -169,7 +178,16 @@ You can choose to run your notebook in Google Colab, or with your command line a
         return {"error": "Sale not found"}
     ```
     ### 5. Run your API, and expose it on the web
-    We'll use `ngrok` to expose our API, and run it with `nest_asyncio` and `uvicorn`. You can choose any port on your localhost that's open. Here we'll run and expose the API on port 8010.
+    We'll use `ngrok` to expose our API, and run it with `nest_asyncio` and `uvicorn`. 
+    
+    First, copy and enter your ngrok api key, which can be found at [https://dashboard.ngrok.com/get-started/your-authtoken](https://dashboard.ngrok.com/get-started/your-authtoken).
+
+    ```
+    print("Enter your authtoken, which can be copied from https://dashboard.ngrok.com/get-started/your-authtoken")
+    conf.get_default().auth_token = getpass.getpass()
+    ```
+
+    Now we'll expose your endpoint to the web. You can choose any port on your localhost that's open. Here we'll run and expose the API on port 8010.
     ```
     ngrok_tunnel = ngrok.connect(8010)
     print('Public URL:', ngrok_tunnel.public_url)
