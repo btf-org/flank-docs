@@ -13,24 +13,9 @@ markdown_extensions:
 
 nav:
   - Home: "index.md"
-  - Backstory: "background.md"
-  - Comparisons:
-      - "Flowchart of Comparisons": "comparisons/master-flowchart.md"
-      - Retool, PowerApps: "comparisons/retool.md"
-      - Postman: "comparisons/postman.md"
-      - Swagger UI / OpenAPI: "comparisons/swagger.md"
-      - Zapier: "comparisons/zapier.md"
-      - "Tableau, Power BI, Looker": "comparisons/bi.md"
-      - Slackbots: "comparisons/slackbots.md"
-      - "Streamlit": "comparisons/streamlit.md"
-      - "PopSQL": "comparisons/popsql.md"
-      - "Metabase": "comparisons/metabase.md"
-      - dbt: "comparisons/dbt.md"
-      - "SPAs (React, etc)": "comparisons/spas.md"
-      - Server-side (Rails, etc): "comparison/server-side.md"
+  - Background: "background.md"
+  - Comparisons: "comparisons/all-comparisons.md"
   - Quick Start: "quickstarts/jupyter-fastapi.md"
-  - Use Cases:
-      - "Turn a data request into a permament tool": "use-cases/one-off.md"
   - Integrations:
       - SQL Server: "integrations/mssql.md"
       - REST APIs: "integrations/rest.md"
