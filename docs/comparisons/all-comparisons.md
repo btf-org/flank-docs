@@ -22,6 +22,22 @@ Flank is great for building **lots of small tools**, where the UI just needs to 
 | Throwback analogy    | Visual Unix pipes                                                            | MS Access for the web                                                                                            |
 
 ### Slackbots
+Slackbots and Flank are both great for quick-and-dirty tools that are often-built and over-designed.
+
+Slack is great for real-time **alerting** and any functionality that can get away with **no interface** (either to input parameters or consume data in a table).
+
+Flank is great for quick-and-dirty apps where you need some **guardrails** on input fields and you want to **view data** in a table.
+
+|                      | Flank                                                                  | Slackbots                                                            |
+| -------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Used by              | Engineers, to quickly expose functionality to business people          | Ditto                                                                |
+| Problem it solves    | Creating a UI with guardrails                                          | Alerting, quick ways for people to ping a backend                    |
+| Best for             | Tools that have some input that benefits from guardrails               | Tools that fit into a "message" paradigm                             |
+| Typical workflow     | Write backend service, connect it to Flank and generate a UI           | Write backend service, write Slackbot to connect to it               |
+| Technically speaking | A wrapper around your backend that creates UI for individual functions | A microservice capable for receiving/sendilng messages to/from Slack |
+| Key simplification   | A lot of "apps" are just a few input fields and a button               | A lot of "apps" are best consumed in a messaging paradigm            |
+| Key difference       | Input fields, buttons, and tables                                      | Messages                                                             |
+| Throwback analogy    | GUI version of CLI                                                     | IRC bot                                                              |
 
 ### Streamlit
 
