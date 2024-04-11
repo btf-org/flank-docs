@@ -20,6 +20,8 @@ You can choose to run your notebook in Google Colab, or with your command line a
 
     Go to [Google Colab](https://colab.research.google.com/) and upload the notebook. 
 
+    ![Upload to Colab](imgs/upload-colab.gif)
+
     ### 3. Install the required libraries. 
 
     Now we'll start running the code in that notebook.  Run the first cell to install the following libraries:
@@ -42,7 +44,7 @@ You can choose to run your notebook in Google Colab, or with your command line a
     ```
 
 
-    ### 2. Set up your API
+    ### 4. Set up your API
 
     Next, set up your FastAPI endpoints. You can set up as many as you'd like, to do whatever you'd like, but here we'll set up an endpoint to generate a simple sales report.
     ```
@@ -65,7 +67,7 @@ You can choose to run your notebook in Google Colab, or with your command line a
                 return sale
         return {"error": "Sale not found"}
     ```
-    ### 3. Run your API, and expose it on the web
+    ### 5. Run your API, and expose it on the web
     We'll use `ngrok` to expose our API, and run it with `nest_asyncio` and `uvicorn`. You can choose any port on your localhost that's open. Here we'll run and expose the API on port 8010.
     ```
     ngrok_tunnel = ngrok.connect(8010)
@@ -99,14 +101,13 @@ You can choose to run your notebook in Google Colab, or with your command line a
 
     ### 2. Setup your venv and Jupyter
 
-    In your terminal, set up a python virtual env.
+    Open up your terminal and run the following to set up a python virtual env.
 
     ```
     python -m venv flankvenv
 
     . flankvenv/bin/activate
     ```
-    (SCREENSHOT)
 
     Now that your venv is activated, install and run jupyter notebook.
 
@@ -115,17 +116,16 @@ You can choose to run your notebook in Google Colab, or with your command line a
 
     jupyter notebook
     ```
-    (SCREENSHOT)
 
     This will open up a browser window with Jupyter running.
 
     Open up the Flank notebook you downloaded earlier.
 
-    (GIF)
+    ![Open notebook](imgs/open-notebook.gif)
 
     ### 3. Running your notebook: install required libraries
     Now that we've got your notebook open, we'll start walking through and running the notebook. 
-    
+
     First, install the following libraries:
 
     - **fastapi** for setting up your API framework
