@@ -1,6 +1,6 @@
 # Flank
 
-Flank is a really **simple** and really **scalable** way to build business software — dashboards, internal tools, simple automations, BI, admin panels, even simple products. 
+Flank is a really **simple** and really **scalable** way to build business software — dashboards, internal tools, report running, BI, admin panels, even simple products. 
 
 It is **NOT** a tool for building custom websites, rich visualizations, or complicated interactions.
 
