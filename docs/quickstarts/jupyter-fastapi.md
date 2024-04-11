@@ -9,11 +9,12 @@ You can choose to run your notebook in Google Colab, or with your command line a
 
     ### Prerequisites
     - A Google account
-    - We'll walk through the basics of Jupyter notebooks but for more information, [read here](https://jupyter.org/install).
+    - A ngrok account. If you don't have an ngrok account, [you can sign up here](https://dashboard.ngrok.com/get-started/your-authtoken).
+    - We assume basic Jupyter notebook familiarity, but it's really as simple as repeatedly clicking `Shift + Enter`. For more information on Jupyter basics, [go here](https://docs.jupyter.org/en/latest/running.html).
 
     ### 1. Download the notebook.
 
-    Well be using this notebook for our quickstart.
+    We'll be using [this notebook](https://flank-quickstart-public.s3.us-west-2.amazonaws.com/flank-quickstart.ipynb) for our quickstart. You can download it [here](https://flank-quickstart-public.s3.us-west-2.amazonaws.com/flank-quickstart.ipynb).
 
     ### 2. Upload to Google Colab.
 
@@ -89,9 +90,18 @@ You can choose to run your notebook in Google Colab, or with your command line a
         
     ### Prerequisites
     - Python installed on your computer
-    - We'll walk through the basic Jupyter setup but for more information on setting up notebooks, [read here](https://jupyter.org/install).
+    - A ngrok account. If you don't have an ngrok account, [you can sign up here](https://dashboard.ngrok.com/get-started/your-authtoken).
+    - We'll walk through the basic Jupyter setup but for more information on setting up and running notebooks, [read here](https://jupyter.org/install).
 
-    ### 1. Setup Jupyter, your venv, and install required libraries
+    ### 1. Download the notebook.
+
+    We'll be using [this notebook](https://flank-quickstart-public.s3.us-west-2.amazonaws.com/flank-quickstart.ipynb) for our quickstart. You can download it [here](https://flank-quickstart-public.s3.us-west-2.amazonaws.com/flank-quickstart.ipynb).
+
+    ### 2. Setup Jupyter and your venv
+
+    In your terminal, set up a python virtual env.
+
+    ### 3. Running your notebook: install required libraries
 
     In your Jupyter notebook, install the following libraries:
 
@@ -112,7 +122,7 @@ You can choose to run your notebook in Google Colab, or with your command line a
     from pyngrok import ngrok
     ```
 
-    ### 2. Set up your API
+    ### 4. Set up your API
 
     Next, set up your FastAPI endpoints. You can set up as many as you'd like, to do whatever you'd like, but here we'll set up an endpoint to generate a simple sales report.
     ```
@@ -135,7 +145,7 @@ You can choose to run your notebook in Google Colab, or with your command line a
                 return sale
         return {"error": "Sale not found"}
     ```
-    ### 3. Run your API, and expose it on the web
+    ### 5. Run your API, and expose it on the web
     We'll use `ngrok` to expose our API, and run it with `nest_asyncio` and `uvicorn`. You can choose any port on your localhost that's open. Here we'll run and expose the API on port 8010.
     ```
     ngrok_tunnel = ngrok.connect(8010)
@@ -154,7 +164,7 @@ You can choose to run your notebook in Google Colab, or with your command line a
 
     ![Verifying docs](imgs/testing-docs.png)
 
-    ### 4. Add your API to Flank
+    ### 6. Add your API to Flank
     Navigate to [flank.cloud](flank.cloud) and log in.
 
     Go to **Create Resource** and choose **API**. Choose **Add your own API**. Paste in docs endpoint for the **API Specs URL**, and nickname the API whatever you'd like.
@@ -163,12 +173,12 @@ You can choose to run your notebook in Google Colab, or with your command line a
 
     Remember, your docs endpoint should be something like `https://fafc-216-228-186-15.ngrok-free.app/openapi.json`.
 
-    ### 5. Sync your endpoint
+    ### 7. Sync your endpoint
     Next, sync your endpoint. Syncing just means Flank automatically finds the endpoints in your API. You can pick and choose the ones you'd like to add.
 
     ![Sync resource in Flank](imgs/sync-resource.gif)
 
-    ### 6. Run it, share it, Flank it
+    ### 8. Run it, share it, Flank it
     Now, you've got a dedicated page webpage on which you can run your endpoint (we call these endpoints "commands" in Flank).
 
     Notice that Flank automatically found the parameters of your sales report endpoint. Flank will find parameters specified in API specs. 
