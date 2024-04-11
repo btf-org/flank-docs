@@ -85,7 +85,7 @@ You can choose to run your notebook in Google Colab, or with your command line a
     ![Verifying docs](imgs/testing-docs.png)
 
 
-=== "Command line + Jupyter browser"
+=== "Command line + Jupyter"
 
         
     ### Prerequisites
@@ -97,13 +97,36 @@ You can choose to run your notebook in Google Colab, or with your command line a
 
     We'll be using [this notebook](https://flank-quickstart-public.s3.us-west-2.amazonaws.com/flank-quickstart.ipynb) for our quickstart. You can download it [here](https://flank-quickstart-public.s3.us-west-2.amazonaws.com/flank-quickstart.ipynb).
 
-    ### 2. Setup Jupyter and your venv
+    ### 2. Setup your venv and Jupyter
 
     In your terminal, set up a python virtual env.
 
-    ### 3. Running your notebook: install required libraries
+    ```
+    python -m venv flankvenv
 
-    In your Jupyter notebook, install the following libraries:
+    . flankvenv/bin/activate
+    ```
+    (SCREENSHOT)
+
+    Now that your venv is activated, install and run jupyter notebook.
+
+    ```
+    pip install notebook
+
+    jupyter notebook
+    ```
+    (SCREENSHOT)
+
+    This will open up a browser window with Jupyter running.
+
+    Open up the Flank notebook you downloaded earlier.
+
+    (GIF)
+
+    ### 3. Running your notebook: install required libraries
+    Now that we've got your notebook open, we'll start walking through and running the notebook. 
+    
+    First, install the following libraries:
 
     - **fastapi** for setting up your API framework
     - **uvicorn** for running your API
