@@ -3,7 +3,28 @@ theme:
   name: material
   logo: 
   palette:
-    primary: deep purple
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: deep purple
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: deep purple
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: deep purple
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
   favicon: "assets/flank-logo.jpeg"   
   features:
     - navigation.footer
@@ -13,18 +34,16 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      permalink: "#"
 
 nav:
   - Home: "index.md"
-  - Background: "background.md"
-  - Comparisons: "comparisons/all-comparisons.md"
   - Quick Start: "quickstarts/jupyter-fastapi.md"
-  - Integrations:
-      - SQL Server: "integrations/mssql.md"
-      - REST APIs: "integrations/rest.md"
-      - AWS Lambda: "integrations/lambda.md"
-      - Azure Function Apps: "integrations/az-functions.md"
+  - Comparisons: "comparisons/all-comparisons.md"
+  - Integrations: "integrations/all-integrations.md"
   - More:
-      - Features and Benefits: "features.md"
+      - Backstory: "background.md"
       - Design Decisions and Tradeoffs: "tradeoffs.md"
+      - Hosting, Security, and PII: "hosting.md"
       - Miscellaneous: "miscellaneous.md"
