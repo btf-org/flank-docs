@@ -41,7 +41,7 @@ Flank is great for quick-and-dirty apps where you need some **guardrails** on in
 
 
 ### React & SPAs
-React and other SPAs (Angular, Vue) are used to build websites, like Flank.
+Flank and React (and other SPAs like Angular & Vue) are both used to build websites.
 
 React is a great framework for a **frontend engineer** to build a **completely custom** website **from the ground up**.
 
@@ -60,7 +60,7 @@ Flank is a tool for **any engineer** to **shortcut** the traditional development
 
 ### Rails & SSRs
 
-Rails and other SSRs (Django, ASP.NET) are used to build websites, like Flank.
+Flank and Rails (and other SSRs like Django and ASP.NET) are both used to build websites.
 
 Rails is a great framework for a **web developer** to build a **completely custom** website **from the ground up**.
 

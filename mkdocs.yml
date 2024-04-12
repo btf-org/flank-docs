@@ -3,7 +3,6 @@ theme:
   name: material
   logo: 
   palette:
-  palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       primary: deep purple
