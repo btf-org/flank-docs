@@ -1,7 +1,7 @@
 # Miscellaneous
 ## Our stack
 
-We’ve tried to keep our stack as simple as possible. 
+Our stack is pretty simple. 
 
 On the frontend, we use Vue, Tailwind, Buefy, and Typescript. We’re particularly fond of a VSCode extension called JavaScript REPL, which provides a live REPL inside JS files.
 

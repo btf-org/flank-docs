@@ -18,10 +18,10 @@ markdown_extensions:
 
 nav:
   - Home: "index.md"
-  - Background: "background.md"
   - Comparisons: "comparisons/all-comparisons.md"
   - Quick Start: "quickstarts/jupyter-fastapi.md"
   - Integrations: "integrations/all-integrations.md"
   - More:
+      - Background: "background.md"
       - Design Decisions and Tradeoffs: "tradeoffs.md"
       - Miscellaneous: "miscellaneous.md"
