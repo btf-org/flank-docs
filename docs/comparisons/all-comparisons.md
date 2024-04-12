@@ -24,7 +24,7 @@ Flank is great for building **lots of small tools**, where the UI just needs to 
 ### Slackbots
 Slackbots and Flank are both great for quick-and-dirty tools that are often-built and over-designed.
 
-Slack is great for real-time **alerting** and any functionality that can get away with **no interface** (either to input parameters or consume data in a table).
+Slackbots are great for real-time **alerting** and any functionality that can get away with **no interface** (either to input parameters or consume data in a table).
 
 Flank is great for quick-and-dirty apps where you need some **guardrails** on input fields and you want to **view data** in a table.
 
