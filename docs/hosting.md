@@ -13,6 +13,7 @@ Flank stores the result of each run. The most common setup is to store the resul
 Flank has one entrypoint into your services, which you control. If you're using it with a database, you can create a database role specifically for Flank. If you're using it with AWS Lambda, you can create an AWS role specifically for Flank.
 
 Basically, Flank needs two permissions:
+
 1. An ability to "read" or gain awareness of stored procedures
 2. An ability to execute whichever ones you want to expose
 
