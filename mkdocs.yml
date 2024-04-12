@@ -39,8 +39,8 @@ markdown_extensions:
 
 nav:
   - Home: "index.md"
-  - Comparisons: "comparisons/all-comparisons.md"
   - Quick Start: "quickstarts/jupyter-fastapi.md"
+  - Comparisons: "comparisons/all-comparisons.md"
   - Integrations: "integrations/all-integrations.md"
   - More:
       - Backstory: "background.md"
