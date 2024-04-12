@@ -21,12 +21,7 @@ nav:
   - Background: "background.md"
   - Comparisons: "comparisons/all-comparisons.md"
   - Quick Start: "quickstarts/jupyter-fastapi.md"
-  - Integrations:
-      - SQL Server: "integrations/mssql.md"
-      - REST APIs: "integrations/rest.md"
-      - AWS Lambda: "integrations/lambda.md"
-      - Azure Function Apps: "integrations/az-functions.md"
+  - Integrations: "integrations/all-integrations.md"
   - More:
-      - Features and Benefits: "features.md"
       - Design Decisions and Tradeoffs: "tradeoffs.md"
       - Miscellaneous: "miscellaneous.md"

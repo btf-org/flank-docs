@@ -141,9 +141,9 @@ Flank allows engineers to share a **UI with guardrails** with **business people*
 
 Snowflake Worksheets and Flank both allow teams to "share queries", but they're actually attacking different problems at different levels of abstraction.
 
-Snowflake Worksheets allows engineers to share **SQL code** with **other engineers**.
+Snowflake Worksheets allow engineers to share **SQL code** with **other engineers**.
 
-Flank allows engineers to share a **UI with guardrails** with **business people**.
+Flank allows engineers to safely share the **ability to execute SQL** with **business people** by autogenerating **UI with guardrails**.
 
 |                      | Flank                                                                                                                                | Snowflake Worksheets                                                                                                            |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |

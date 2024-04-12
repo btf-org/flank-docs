@@ -6,3 +6,5 @@ It is **NOT** a tool for building custom websites, rich visualizations, or compl
 
 [Build your first app in 5 minutes](quickstarts/jupyter-fastapi.md) 👉
 
+![Outflank](assets/outflank.svg)
+
