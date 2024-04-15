@@ -3,24 +3,27 @@
 
 In this example, we're going to create an API on your computer, serve it over the internet, and Flank will create a webpage for interacting with it. It should take less than 5 minutes.
 
-The quickstart is contained in a Jupyter notebook. You can choose to run your notebook in Google Colab (if you have a Google account), or with your command line and the Jupyter browser. 
+The quickstart is contained in a Jupyter notebook that you can run on Google Colab.
 
-=== "Google Colab"
+### 1. Download the notebook [here](https://flank-quickstart-public.s3.us-west-2.amazonaws.com/flank-quickstart-new-colab.ipynb).
 
-    ### 1. Download the notebook [here](https://flank-quickstart-public.s3.us-west-2.amazonaws.com/flank-quickstart.ipynb).
+### 2. Upload it to Google Colab.
 
-    ### 2. Upload it to Google Colab.
+Go to [Google Colab](https://colab.research.google.com/){:target="_blank"} and upload the notebook. 
 
-    Go to [Google Colab](https://colab.research.google.com/){:target="_blank"} and upload the notebook. 
+![Upload to Colab](imgs/upload-colab.gif)
 
-    ![Upload to Colab](imgs/upload-colab.gif)
+### 3. Get rolling on Flank.
 
-    ### 3. Get rolling on Flank.
+The instructions are all contained in the notebook. You'll progress through it by hitting Shift + Enter to run the different steps. 5 minutes to Flank!
+ <!-- You can choose to run your notebook in Google Colab (if you have a Google account), or with your command line and the Jupyter browser.  -->
 
-    The instructions are all contained in the notebook. You'll progress through it by hitting Shift + Enter to run the different steps. 5 minutes to Flank!
+<!-- === "Google Colab" -->
+
+   
 
 
-
+<!-- 
 === "Command line + Jupyter"
 
         
@@ -156,5 +159,5 @@ The quickstart is contained in a Jupyter notebook. You can choose to run your no
 
 
     And share your endpoint...
-
+ -->
 Run into problems? Email us at [mallory@flank.cloud](mailto:mallory@flank.cloud).
