@@ -3,7 +3,7 @@
 
 In this example, we're going to create an API on your computer, serve it over the internet, and Flank will create a webpage for interacting with it. It should take less than 5 minutes.
 
-The quickstart is contained in a Jupyter notebook. You can choose to run your notebook in Google Colab, or with your command line and the Jupyter browser. 
+The quickstart is contained in a Jupyter notebook. You can choose to run your notebook in Google Colab (if you have a Google account), or with your command line and the Jupyter browser. 
 
 === "Google Colab"
 
@@ -11,7 +11,7 @@ The quickstart is contained in a Jupyter notebook. You can choose to run your no
 
     ### 2. Upload it to Google Colab.
 
-    Go to [Google Colab](https://colab.research.google.com/) and upload the notebook. 
+    Go to [Google Colab](https://colab.research.google.com/){:target="_blank"} and upload the notebook. 
 
     ![Upload to Colab](imgs/upload-colab.gif)
 
