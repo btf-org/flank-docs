@@ -5,7 +5,7 @@ In this example, we're going to create an API on your computer, serve it over th
 
 The quickstart is contained in a Jupyter notebook that you can run on Google Colab.
 
-### 1. Download the notebook [here](https://flank-quickstart-public.s3.us-west-2.amazonaws.com/flank_quickstart_colab_final.ipynb).
+### 1. Download the notebook [here](https://flank-quickstart-public.s3.us-west-2.amazonaws.com/flank_quickstart_colab_417.ipynb).
 
 ### 2. Upload it to Google Colab.
 
