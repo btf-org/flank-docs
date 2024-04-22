@@ -1,0 +1,1755 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../quickstarts/jupyter-fastapi/">
+      
+      
+        <link rel="next" href="../../integrations/all-integrations/">
+      
+      
+      <link rel="icon" href="../../assets/flank-logo.jpeg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>Comparisons - Flank</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#comparisons" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Flank" class="md-header__button md-logo" aria-label="Flank" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Flank
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Comparisons
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Flank" class="md-nav__button md-logo" aria-label="Flank" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Flank
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../quickstarts/jupyter-fastapi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Comparisons
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Comparisons
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#internal-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Internal Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Internal Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retool-powerapps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retool, PowerApps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slackbots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slackbots
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react-spas" class="md-nav__link">
+    <span class="md-ellipsis">
+      React &amp; SPAs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rails-ssrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rails &amp; SSRs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevTools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DevTools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postman
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swagger-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swagger UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popsql" class="md-nav__link">
+    <span class="md-ellipsis">
+      PopSQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snowflake-worksheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snowflake Worksheets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-intelligence-bi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Intelligence (BI)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Business Intelligence (BI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tableau-powerbi-looker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tableau, PowerBI, Looker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metabase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metabase
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streamlit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Streamlit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zapier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zapier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dbt" class="md-nav__link">
+    <span class="md-ellipsis">
+      dbt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipedream" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipedream
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/all-integrations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    More
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            More
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../background/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backstory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tradeoffs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design Decisions and Tradeoffs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hosting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hosting, Security, and PII
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../miscellaneous/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#internal-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Internal Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Internal Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retool-powerapps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retool, PowerApps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slackbots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slackbots
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react-spas" class="md-nav__link">
+    <span class="md-ellipsis">
+      React &amp; SPAs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rails-ssrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rails &amp; SSRs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#devtools" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevTools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DevTools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postman
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swagger-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swagger UI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popsql" class="md-nav__link">
+    <span class="md-ellipsis">
+      PopSQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snowflake-worksheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Snowflake Worksheets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-intelligence-bi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Intelligence (BI)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Business Intelligence (BI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tableau-powerbi-looker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tableau, PowerBI, Looker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metabase" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metabase
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streamlit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Streamlit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Automations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zapier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zapier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dbt" class="md-nav__link">
+    <span class="md-ellipsis">
+      dbt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipedream" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipedream
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="comparisons">Comparisons<a class="headerlink" href="#comparisons" title="Permanent link">#</a></h1>
+<h2 id="internal-tools">Internal Tools<a class="headerlink" href="#internal-tools" title="Permanent link">#</a></h2>
+<h3 id="retool-powerapps">Retool, PowerApps<a class="headerlink" href="#retool-powerapps" title="Permanent link">#</a></h3>
+<p>Retool and Flank are both general purpose tools for building business software.</p>
+<p>Retool is great for <strong>rich UIs</strong> and <strong>interactive apps</strong>. We introduced Retool at past jobs, and we highly recommend it. (Haven't used PowerApps, can't recommend it...)</p>
+<p>Flank is great for building <strong>lots of small tools</strong>, where the UI just needs to look as good as a Google Form.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>Retool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers (to build) and business people (end users)</td>
+<td>Ditto</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Releasing functionality as quickly as possible, where UI doesn't matter much</td>
+<td>Building internal websites with rich UIs</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Deploy backend code, Flank generates a web page for it, share with teammmate</td>
+<td>Design a website by dragging and dropping a library of components onto the screen, then wire it up to SQL and JS</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>Wrapper around backend services that provides an API and autogenerated UI</td>
+<td>Drag-and-rdop WYSIWYG website builder, with code editor and execution built in</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>90% of features don't need a designed interface</td>
+<td>Wiring up components is easier in a drag-and-drop editor than in pure HTML</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>You write and deploy your code on your terms. Flank merely wraps it.</td>
+<td>Your code is written, stored, and executed in Retool's platform.</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>Visual Unix pipes</td>
+<td>MS Access for the web</td>
+</tr>
+</tbody>
+</table>
+<h3 id="slackbots">Slackbots<a class="headerlink" href="#slackbots" title="Permanent link">#</a></h3>
+<p>Slackbots and Flank are both great for quick-and-dirty tools that are often-built and over-designed.</p>
+<p>Slackbots are great for real-time <strong>alerting</strong> and any functionality that can get away with <strong>no interface</strong> (either to input parameters or consume data in a table).</p>
+<p>Flank is great for quick-and-dirty apps where you need some <strong>guardrails</strong> on input fields and you want to <strong>view data</strong> in a table.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>Slackbots</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers, to quickly expose functionality to business people</td>
+<td>Ditto</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>Creating a UI with guardrails</td>
+<td>Alerting, quick ways for people to ping a backend</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Tools that have some input that benefits from guardrails</td>
+<td>Tools that fit into a "message" paradigm</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Write backend service, connect it to Flank and generate a UI</td>
+<td>Write backend service, write Slackbot to connect to it</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>A wrapper around your backend that creates UI for individual functions</td>
+<td>A microservice capable for receiving/sendilng messages to/from Slack</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>A lot of "apps" are just a few input fields and a button</td>
+<td>A lot of "apps" are best consumed in a messaging paradigm</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>Input fields, buttons, and tables</td>
+<td>Messages</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>GUI version of CLI</td>
+<td>IRC bot</td>
+</tr>
+</tbody>
+</table>
+<h3 id="react-spas">React &amp; SPAs<a class="headerlink" href="#react-spas" title="Permanent link">#</a></h3>
+<p>Flank and React (and other SPAs like Angular &amp; Vue) are both used to build websites.</p>
+<p>React is a great framework for a <strong>frontend engineer</strong> to build a <strong>completely custom</strong> website <strong>from the ground up</strong>.</p>
+<p>Flank is a tool for <strong>any engineer</strong> to <strong>shortcut</strong> the traditional development lifecycle and get quick functionality into the hands of business users.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>SPAs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers, to build apps super quickly</td>
+<td>Engineers, to build anything</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>Traditional SDLC is overkill for quick functionality</td>
+<td>Vanilla HTML/JS/CSS doesn't model the way that engineers think about decomposing web apps</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Quick-and-dirty business applications</td>
+<td>Highly interactive web sites, where data is constantly being passed back and forth to a backend</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Write backend service, Flank creates web pgae</td>
+<td>Write backend service, write frontend code, test locally, host it, deploy it</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>A hosted app that transforms backend code into business apps</td>
+<td>A way to write HTML + JS that more closely mirrors the way engineers think about web pages</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>Many websites can be derived from the backend code</td>
+<td>Engineers look at a web page and think in terms of "components" that are hierarchical and distinct from one another</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>App that saves you from having to use a programming language</td>
+<td>Programming language</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>Autogenerated (and hosted) HTML/JS/CSS</td>
+<td>Programming language that compiles to HTML/JS/CSS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rails-ssrs">Rails &amp; SSRs<a class="headerlink" href="#rails-ssrs" title="Permanent link">#</a></h3>
+<p>Flank and Rails (and other SSRs like Django and ASP.NET) are both used to build websites.</p>
+<p>Rails is a great framework for a <strong>web developer</strong> to build a <strong>completely custom</strong> website <strong>from the ground up</strong>.</p>
+<p>Flank is a tool for <strong>any engineer</strong> to <strong>shortcut</strong> the traditional development lifecycle and get quick functionality into the hands of business users.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>SSRs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers, to build apps super quickly</td>
+<td>Engineers, to build anything</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>Traditional SDLC is overkill for quick functionality</td>
+<td>Vanilla HTML/JS/CSS doesn't model the way that engineers think about decomposing web apps</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Quick-and-dirty business applications</td>
+<td>Full featured websites where there isn't a ton of interactivity and data being passed to/from the backend</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Write backend service, Flank creates web pgae</td>
+<td>Write backend service, write frontend code, test locally, host it, deploy it</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>A hosted app that transforms backend code into business apps</td>
+<td>A way to write HTML + JS that more closely mirrors the way engineers think about web pages</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>Many websites can be derived from the backend code</td>
+<td>Engineers look at a web application and think in terms of data that is wired up to views</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>App that saves you from having to use a programming language</td>
+<td>Programming language</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>Autogenerated (and hosted) HTML/JS/CSS</td>
+<td>Programming language that compiles to HTML/JS/CSS + backend code + SQL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="devtools">DevTools<a class="headerlink" href="#devtools" title="Permanent link">#</a></h2>
+<h3 id="postman">Postman<a class="headerlink" href="#postman" title="Permanent link">#</a></h3>
+<p>Postman and Flank are similar in that they both sit on top existing code/services and don't house any app logic themselves.</p>
+<p>Postman is a tool for <strong>building and testing APIs</strong> that's used by <strong>engineers</strong>.</p>
+<p>Flank is a tool for quickly building <strong>UI with guardrails</strong> to put in front of <strong>business people</strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>Postman</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers and Business People</td>
+<td>Just Engineers</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>It's difficult to quickly and safely expose API functionality to business people</td>
+<td>Difficult to develop and test an API in the terminal</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Building business software</td>
+<td>Developing and testing APIs</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Deploy an API endpoint, Flank generates a web page for it, can be combined with other endpoints to create tools</td>
+<td>Import an API spec, make API requests</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>A wrapper around your API that provides autogenerated UI</td>
+<td>Thin client for making HTTP requests</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>90% of internal apps are just input boxes and buttons that are wired up to API endpoints</td>
+<td>Everything you do with `curl` is much easier in a UI</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>Intended to be used by business people</td>
+<td>Many more testing and debugging utilities</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>An API =&gt; HTML compiler</td>
+<td>Interface for `curl`</td>
+</tr>
+</tbody>
+</table>
+<h3 id="swagger-ui">Swagger UI<a class="headerlink" href="#swagger-ui" title="Permanent link">#</a></h3>
+<p>Swagger UI and Flank are similar in that they both autogenereate UI from backend code.</p>
+<p>Swagger UI is great for quickly <strong>testing API endpoints</strong>. It's like a quick-and-dirty <a href="../postman/">Postman</a>.</p>
+<p>Flank is used to <strong>build business applications</strong> -- it has RBAC, guardrails and everything else necessary to safely expose functionality to business users. Not to mention the ability to combine two endpoints to make a more sophisicated tool.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>SwaggerUI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers and Business People</td>
+<td>Just Engineers</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>It's difficult to quickly and safely expose API functionality to business people</td>
+<td>Difficult to lookup API endpoints and make calls in the terminal</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Building business software</td>
+<td>Quickly testing APIs</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Deploy an API endpoint, Flank generates a web page for it, can be combined with other endpoints to create tools</td>
+<td>Create an API spec, SwaggerUI is generated, make some test requests</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>A wrapper around your API that provides auth + RBAC + guardrails + history</td>
+<td>Web page for making API requests</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>90% of internal apps can be modeled as a SwaggerUI input, with just a *little* more guardrails and ability to combine</td>
+<td>Input fields are easier than wrangling with JSON and curl in the CLI</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>Intended to be used by business people</td>
+<td>Intended for engineers (no guardrails, RBAC, etc)</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>Visual Unix pipes</td>
+<td>An API =&gt; HTML compiler</td>
+</tr>
+</tbody>
+</table>
+<h3 id="popsql">PopSQL<a class="headerlink" href="#popsql" title="Permanent link">#</a></h3>
+<p>PopSQL and Flank both allow teams to "share queries", but they're actually attacking different problems at different levels of abstraction.</p>
+<p>PopSQL allows engineers to share <strong>SQL code</strong> with <strong>other engineers</strong>.</p>
+<p>Flank allows engineers to share a <strong>UI with guardrails</strong> with <strong>business people</strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>PopSQL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers, to expose SQL (among other things), and business people, to run it</td>
+<td>Engineers, to write and reuse SQL</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>Hard to safely expose SQL queries to business people</td>
+<td>Sharing SQL queries is clunky</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Exposing a stored procedure to a business person</td>
+<td>Writing a SQL query that your teammate could reuse later</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Write SQL in your IDE, point Flank at it, share with a business person</td>
+<td>Write SQL query in PopSQL, another teammate grabs it and runs it</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>API that wraps stored procs, with a UI layer on top, which provides guardrails for business people to interact with the stored procs</td>
+<td>Cloud-based SQL IDE that enables collaboration</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>The UI to interact with stored procs can be derived from the procedure's parameters</td>
+<td>Moving the "reusability" layer from stored procs to the cloud allows for some nice features (e.g. pretty names, usage tracking)</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>Collaborative SQL runner</td>
+<td>Collaborative SQL IDE</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>A web app that sits on top of a folder in git with a bunch of "team" queries</td>
+<td>A folder in git with a bunch of "team" queries</td>
+</tr>
+</tbody>
+</table>
+<h3 id="snowflake-worksheets">Snowflake Worksheets<a class="headerlink" href="#snowflake-worksheets" title="Permanent link">#</a></h3>
+<p>Snowflake Worksheets and Flank both allow teams to "share queries", but they're actually attacking different problems at different levels of abstraction.</p>
+<p>Snowflake Worksheets allow engineers to share <strong>SQL code</strong> with <strong>other engineers</strong>.</p>
+<p>Flank allows engineers to safely share the <strong>ability to execute SQL</strong> with <strong>business people</strong> by autogenerating <strong>UI with guardrails</strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>Snowflake Worksheets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers, to expose SQL (among other things), and business people, to run it</td>
+<td>Engineers, to write and reuse SQL</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>Hard to safely expose SQL queries to business people</td>
+<td>Sharing SQL queries is clunky</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Exposing a stored procedure to a business person</td>
+<td>Writing a SQL query that your teammate could reuse later</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Write SQL in your IDE, point Flank at it, share with a business person</td>
+<td>Write SQL query in Snowflake, another teammate grabs it and runs it</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>API that wraps stored procs, with a UI layer on top, which provides guardrails for business people to interact with the stored procs</td>
+<td>Cloud-based SQL IDE that enables collaboration</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>The UI to interact with stored procs can be derived from the procedure's parameters</td>
+<td>Moving the "reusability" layer from stored procs to the cloud allows for some nice features (e.g. pretty names, usage tracking)</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>SQL runner with guardrails</td>
+<td>Collaborative SQL IDE</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>A web app that sits on top of a folder in git with a bunch of "team" queries</td>
+<td>A folder in git with a bunch of "team" queries</td>
+</tr>
+</tbody>
+</table>
+<h2 id="business-intelligence-bi">Business Intelligence (BI)<a class="headerlink" href="#business-intelligence-bi" title="Permanent link">#</a></h2>
+<h3 id="tableau-powerbi-looker">Tableau, PowerBI, Looker<a class="headerlink" href="#tableau-powerbi-looker" title="Permanent link">#</a></h3>
+<p>BI tools and Flank can both be used to get data into the hands of the right business person.</p>
+<p>BI tools are used to build <strong>dashboards</strong> for <strong>executives</strong>. Basically, someone looking at a <strong>pretty visualization</strong>.</p>
+<p>Flank is used to build <strong>quick-and-dirty functionality</strong> for <strong><em>all</em> business people</strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>Tableau, Power BI, Looker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers (to build tools) and all manner of business people (to do stuff)</td>
+<td>Data analysts (to make dashboards) and executives (to never look at them)</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>Quick-and-dirty functionality</td>
+<td>Pretty data visualization</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Putting a SQL query in the hands of a business person</td>
+<td>Building a dashboard for an executive</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Write SQL in your IDE, Flank creates a page for it, share the URL with a teammate</td>
+<td>Connect a DB, write SQL in the tool, create a visualization using drag-and-drop builder</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>A wrapper around your DB that automatically creates quick-and-dirty BI pages</td>
+<td>Client (web or desktop) that queries DB and displays charts</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>Simple dashboards can be <em>derived</em> from SQL</td>
+<td>Dashboards can be built with SQL + drag-and-drop</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>Quick-and-dirty, point-and-click tool</td>
+<td>Rich data visualization, auto-refreshing data</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>Excel spreadsheets</td>
+<td>Excel charts</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metabase">Metabase<a class="headerlink" href="#metabase" title="Permanent link">#</a></h3>
+<p>Metabase and Flank can both be used to get data into the hands of the right business person.</p>
+<p>Metabase is a simpler open-source alternative to <a href="../bi/">BI tools like Tableau and Power BI</a>. Like those tools, it is focused on <strong>dashboards</strong> for <strong>decision-makers</strong>.</p>
+<p>Flank is used to build <strong>quick-and-dirty functionality</strong> for <strong><em>all</em> business people</strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>Metabase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers (to build tools) and all manner of business people (to do stuff)</td>
+<td>Data analysts (to make dashboards) and business people (to look at them)</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>Quick-and-dirty functionality</td>
+<td>Searchable tables and data visualization</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Putting a SQL query in the hands of a business person</td>
+<td>Building a dashboard for a decision-maker</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Write SQL in your IDE, Flank creates a page for it, share the URL with a teammate</td>
+<td>Connect a DB, write SQL in the tool, create a visualization</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>A wrapper around your DB that automatically creates quick-and-dirty BI pages</td>
+<td>Web-based SQL editor + visualizations</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>Simple dashboards can be *derived* from SQL</td>
+<td>Dashboards can be built with SQL + drag-and-drop</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>Quick-and-dirty, point-and-click tool</td>
+<td>Rich data visualization, auto-refreshing data</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>Excel spreadsheets</td>
+<td>Excel charts</td>
+</tr>
+</tbody>
+</table>
+<h3 id="streamlit">Streamlit<a class="headerlink" href="#streamlit" title="Permanent link">#</a></h3>
+<p>Streamlit and Flank both empower a single engineer/data scientist to build a quick app without involving other people/process.</p>
+<p>Streamlit is the amazing tool for <strong>turning a Python script into a interactive web app</strong>. It empowers <strong>data scientists</strong> to build sharable apps on their own, which removes their dependency on engineers. Highly recommend.</p>
+<p>Flank is a tool for <strong>turning any "function" on the internet into a tool</strong> ("function" = API endpoint, cloud function, stored proc). It empowers <strong>all engineers</strong> to release features without many of the burdens of the traditional development lifecycle.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>Streamlit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers, to build general-purpose business software</td>
+<td>Data scientists, to build interactive visualizations</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>Building a webpage to do some CRUD operation, and hosting it</td>
+<td>Building a webpage with interactive graphics, and hosting it</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Making some backend code (safely) accessible, and sharing it</td>
+<td>Making a Jupyter notebook beautiful, and sharing it</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Write Python and deploy it, Flank detects it and creates a UI for it</td>
+<td>Write a Python script, run the streamlit server locally, make your visualizations and interactions rock, then publish it</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>A "pointer" to run Python code (or any other type) that is hosted elsewhere</td>
+<td>Web framework for scripty Python code, with a graphing library, and then hosting services on top of it all</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>It's simpler to use autogenerated UI for the long tail of little things, and then to focus your time elswhere</td>
+<td>It's simpler (and cheaper!) to build a data app using Python than it is to learn Tableau</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>Interactive CRUD functionality, built from any hosted service</td>
+<td>Interactive visualizations, built from Python</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>Single page application (SPA), decoupled from API, but automatically generated</td>
+<td>It is to Python / data science what Rails + Heroku was to Ruby / web apps</td>
+</tr>
+</tbody>
+</table>
+<h2 id="automations">Automations<a class="headerlink" href="#automations" title="Permanent link">#</a></h2>
+<h3 id="zapier">Zapier<a class="headerlink" href="#zapier" title="Permanent link">#</a></h3>
+<p>Zapier and Flank both abstract over API endpoints, but the use cases are very different.</p>
+<p>Zapier is great for sync'ing data between <strong>3rd-party tools</strong> when some <strong>event</strong> happens. For example, you get an email in GMail with "Feature Request" in the subject, Zapier automatically creates a new ticket in Trello.</p>
+<p>Flank is for situations where an engineers needs to put <strong>custom software</strong> in front of a business person, and that person will <strong>manually</strong> click the button at unpredictable times.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>Zapier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers and Business People</td>
+<td>Business people</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>It's time-consuming for an engineer to build a button for a business person</td>
+<td>It's a pain to sync data between business products</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Building <em>custom</em> business software where a human will be clicking around</td>
+<td>Connecting 3rd-party tools with event-based triggers</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Example: Business person needs to fetch a dataset, they go into Flank and remotely trigger a stored procedure</td>
+<td>Example: When you receive an email in GMail with <these> keywords, create a new card in Trello</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>A wrapper around your API/DB that gives business people a way to safely trigger functions/procs</td>
+<td>A listener on certain events in 3rd party tools, with chainable actions</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>90% of point-and-click apps/tools/dashboards can be derived from the backend code</td>
+<td>A lot of ETL / reverse ETL is just a webhook + some chained API calls</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>Used by engineers to put a button in front of a business person</td>
+<td>Used by business people to fully automate data sync'ing</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>MSFT Access view layer (forms, reports)</td>
+<td>Excel macros, but instead of working across sheets, it's working across 3rd-party APIs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dbt">dbt<a class="headerlink" href="#dbt" title="Permanent link">#</a></h3>
+<p>dbt and Flank are both tools that sit on top of SQL queries.</p>
+<p>dbt is a tool for data analysts to build production <strong>data pipelines</strong> using nothing more than SQL (well, not really the whole pipeline, just the "T" in ETL/ELT)</p>
+<p>Flank is a tool for building quick-and-dirty <strong>business applications</strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>dbt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers, to expose SQL (among other things), and business people, to run it</td>
+<td>SQL writers, to build data pipelines with just SQL (well, really the T in ETL/ELT)</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>Hard to safely expose SQL queries to business people</td>
+<td>Data engineers become bottlenecks for transformation tasks that are conceptually simple enough for any SQL writer to do</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Exposing a stored procedure to a business person</td>
+<td>Writing data pipelines in SQL</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Write SQL in your IDE, point Flank at it, share with a business person</td>
+<td>Write SQL query in dbt, set up a pipeline task that runs automatically</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>API that wraps stored procs, with a UI layer on top, which provides guardrails for business people to interact with the stored procs</td>
+<td>Web-based GUI for writing SQL and setting up data pipelines</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>Making a GUI for every stored proc fosters better collaboration between engineers and business people</td>
+<td>Making a GUI for pipelining / deployment allows a new class of engineers (SQL writers) to contribute to data engineering</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>Business application builder</td>
+<td>Data pipeline builder</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>A web app that sits on top of a folder in git with a bunch of "team" queries</td>
+<td>An orchestration tool that points at a folder in git with a bunch of "team" queries</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pipedream">Pipedream<a class="headerlink" href="#pipedream" title="Permanent link">#</a></h3>
+<p>Flank and Pipedream are both opinionated bundlings of cloud services that allow engineers to quickly build quick-and-dirty tools.</p>
+<p>Pipedream is used by engineers to build <strong>event-based automations</strong>. It's particularly good at connecting <strong>3rd-party APIs</strong>.</p>
+<p>Flank is used by engineers to build <strong>business applications</strong> where there's a <strong>human in-the-loop</strong>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flank</th>
+<th>Pipedream</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Used by</td>
+<td>Engineers, to build apps for business people</td>
+<td>Engineers, to build automations</td>
+</tr>
+<tr>
+<td>Problem it solves</td>
+<td>It's time-consuming for an engineer to build a button for a business person</td>
+<td>It's a pain to build event-driven automations that connect a bunch of 3rd party APIs</td>
+</tr>
+<tr>
+<td>Best for</td>
+<td>Building business software where a human will be clicking around</td>
+<td>Building event-based automations around 3rd-party APIs</td>
+</tr>
+<tr>
+<td>Typical workflow</td>
+<td>Example: Business person needs to fetch a dataset, they go into Flank and remotely trigger a stored procedure</td>
+<td>Example: Snowflake task fails, call the chatGPT API, then pipe the result into Slack</td>
+</tr>
+<tr>
+<td>Technically speaking</td>
+<td>A wrapper around your API/DB that gives business people a way to safely trigger functions/procs</td>
+<td>Web-based JS editor that deploys apps with webhooks that execute chains of functions</td>
+</tr>
+<tr>
+<td>Key simplification</td>
+<td>90% of point-and-click apps/tools/dashboards can be derived from the backend code</td>
+<td>Many automations follow the pattern of webhook + function + function + function</td>
+</tr>
+<tr>
+<td>Key difference</td>
+<td>Button clicks</td>
+<td>Automations</td>
+</tr>
+<tr>
+<td>Throwback analogy</td>
+<td>Google Forms, that are wired up to backend services</td>
+<td>Zapier, where you write JS</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../quickstarts/jupyter-fastapi/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quick Start">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Quick Start
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../integrations/all-integrations/" class="md-footer__link md-footer__link--next" aria-label="Next: Integrations">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Integrations
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>
