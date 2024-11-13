@@ -6,7 +6,7 @@ Flank is inspired by the previous generations of internal tool builders, and des
 You don't write any code in Flank. You write code in your IDE and deploy it with your CI/CD. Flank is just a proxy for running it on your infrastructure.
 
 ## No lock-in
-There is effectively zero "app logic" in Flank. No JS, no loops, no conditionals.  You could put 100 stored procedures into Flank, throw Flank out the window, and you'd still have your 100 stored procedures.
+There is effectively zero "app logic" in Flank. No extra JS "glue", no loops, no conditionals. You could put 100 stored procedures into Flank, throw Flank out the window, and you'd still have your 100 stored procedures.
 
 ## No design debt
 There's no drag-and-drop in Flank. Nothing to design. No Frankenstein UIs that require a whole wiki to onboard new hires.
@@ -20,7 +20,7 @@ Flank stays in sync with changes to backend code (via an API schema or RDBMS met
 ## Deprecate with confidence
 _Is it safe to deprecate this stored procedure? When was the last time anyone used it...?_ Flank provides out-of-the-box analytics on who ran what, and when they ran it.
 
-## Track down errors with speed
+## Track down errors quickly
 If a button doesn't work in a React app, it takes a small army of people (and JIRA tickets) to figure out which API call failed. In Flank, you just look at failed executions and you can see exactly which call failed and what the user's input was.
 
 ## Arbitrarily large datasets
