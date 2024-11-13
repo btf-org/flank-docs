@@ -1,11 +1,13 @@
 # Flank
 
-Flank is a really **simple** and really **scalable** way to build business software — dashboards, internal tools, report running, BI, admin panels... even simple products!
+![ASCII](assets/flank-ascii-text-black.png#only-light)
+![ASCII](assets/flank-ascii-text.png#only-dark)
 
-It is **NOT** a tool for building custom websites, rich visualizations, or complicated interactions.
+Flank is a companion for building internal tools. It's similar to Retool, but without the tech debt.
 
-[Build your first app in 5 minutes](quickstarts/jupyter-fastapi.md) 👉
+- [Build your first app in 5 minutes](quickstarts/jupyter-fastapi.md) 👉
+- [No tech debt?](tech-debt.md)
+- [Comparisons](comparisons/all-comparisons.md)
 
-![Outflank](assets/outflank.svg#only-light)
-![Outflank](assets/outflank-dark.svg#only-dark)
+If you want to get in touch, shoot us an email at angus@flank.cloud
 
