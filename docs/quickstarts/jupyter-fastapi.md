@@ -11,4 +11,4 @@ In this example, we'll create a dashboard and a tool using Flank. To simulate a 
 
 ![Upload to Colab](imgs/upload-colab.gif)
 
-If you run into any problems, you can email us at mallory@flank.cloud. If you want to view the code in your browser or clone the repo and run locally, [click here](https://github.com/btf-org/flank-quickstart/blob/main/google-colab/flank_quickstart_colab.ipynb).
+If you run into any problems, you can email us at angus@flank.cloud. If you want to view the code in your browser or clone the repo and run locally, [click here](https://github.com/btf-org/flank-quickstart/blob/main/google-colab/flank_quickstart_colab.ipynb).

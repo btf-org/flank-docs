@@ -1,3 +1,0 @@
-# Slackbots
-
-Slackbots
