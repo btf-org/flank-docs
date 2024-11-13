@@ -1,5 +1,7 @@
 # No tech debt?
 
+Flank is inspired by the previous generations of internal tool builders, and designed to address some of their shortcomings when it comes to scaling.
+
 ## No "code seep"
 You don't write any code in Flank. You write code in your IDE and deploy it with your CI/CD. Flank is just a proxy for running it on your infrastructure.
 

@@ -40,8 +40,11 @@ markdown_extensions:
 nav:
   - Home: "index.md"
   - Quick Start: "quickstarts/jupyter-fastapi.md"
+  - No tech debt?: "tech-debt.md"
+  - Use Cases: "use-cases.md"
   - Comparisons: "comparisons/all-comparisons.md"
   - Integrations: "integrations/all-integrations.md"
+  - Contact Us: "contact.md"
   - More:
       - Backstory: "background.md"
       - Design Decisions and Tradeoffs: "tradeoffs.md"
