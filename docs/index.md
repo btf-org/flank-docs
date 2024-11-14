@@ -5,7 +5,7 @@
 
 Flank is a companion for building internal tools. It's similar to Retool, but [without the tech debt](tech-debt.md).
 
-- [Build an API in 4 minutes, and a Flank app in 1](quickstarts/jupyter-fastapi.md) ⏱️
+- [Quickstart](quickstarts/jupyter-fastapi.md) 
 - [Use Cases](use-cases.md)
 - [Comparisons](comparisons/all-comparisons.md)
 
