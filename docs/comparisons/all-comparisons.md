@@ -1,8 +1,12 @@
 # Comparisons
 
+In terms of what it's used for, Flank is like Retool but [without the tech debt](/tech-debt.md).
+
+In terms of how it works/how it's architected, Flank is like Swagger UI for teams, if there were some ability to combine API calls.
+
 ## Internal Tools
 
-### Retool, PowerApps
+### Retool, PowerApps, Budibase, etc.
 
 Retool and Flank are both general purpose tools for building business software.
 

@@ -9,6 +9,7 @@
 - Report running
 - Scheduled jobs
 - CRUD apps
+- Business intelligence (BI)
 
 ## Specific engineering use cases
 

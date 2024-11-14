@@ -10,3 +10,7 @@ We host the frontend in S3 (AWS) and Static Web Apps (Azure). We host the backen
 ## Tools that inspire us
 
 There are two tools that really influenced the way we think about programming. One is Unix pipes and the other is Jupyter Notebooks/REPLs. Then, from a UI/UX perspective, we really like how Notion does all the simple things really well and just gets out your way. Spiritually, Flank is a mashup of those three things.
+
+## Motivation
+
+All of us were, at some point, engineers who were relied on to run stuff. We were turning into "human run buttons," and that was annoying. The thinking was something like, _Once there's code in the cloud/database, shouldn't it be easy for anyone to run it?_ 
