@@ -44,9 +44,5 @@ nav:
   - Use Cases: "use-cases.md"
   - Comparisons: "comparisons/all-comparisons.md"
   - Integrations: "integrations/all-integrations.md"
+  - Miscellaneous: "miscellaneous.md"
   - Contact Us: "contact.md"
-  - More:
-      - Backstory: "background.md"
-      - Design Decisions and Tradeoffs: "tradeoffs.md"
-      - Hosting, Security, and PII: "hosting.md"
-      - Miscellaneous: "miscellaneous.md"

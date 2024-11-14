@@ -1,29 +1,31 @@
 # Use Cases
 
-Flank can be used in a lot of different ways. These are just some ideas...
 
-## Obvious stuff
+## Classic "internal tooling" use cases
 - Dashboards
 - Forms
 - Approval flows
 - Runbooks
-- Report runners
+- Report running
 - Scheduled jobs
 - CRUD apps
 
-## More subtle
+## Specific engineering use cases
+
+Flank can be used in a lot of different ways. These are just some ideas...
 
 ### SQL Writers
-- Create an app for every ad-hoc query that you write for a business person
+- **Reuse ad hoc queries.** If you get into the practice of wrapping every ad-hoc query in a stored procedure, you'll get an app for free every time you write SQL!
 
 ### Backend Engineering
 
 ### Frontend Engineering
-- Set up scheduled jobs without going through backend engineers
+- **Self-serve cron.** Set up scheduled jobs without going through backend engineers
 
 ### Data Engineering
-- Create quick apps for teammates to re-run failed jobs, without giving them full access to Airflow
-- Quick apps for one-off data corrections to single rows
+- **Democratize re-running.** Create quick apps for teammates to re-run failed jobs, without giving them full access to Airflow
+- **Offload one-off data correction.** Create lots of little apps for one-off data corrections to single rows
+- **Review dead letter queues.** Create a quick app for QA on data that is put into a dead letter queue
 
 ### Engineering Management
-- Automate the creation of *many* apps through Flank's API
+- **Deprecate unused code.** If you run your internal tooling through Flank, you can get metrics on which procedures/endpoints are not being used.
