@@ -42,7 +42,7 @@ nav:
   - Quick Start: "quickstarts/jupyter-fastapi.md"
   - No tech debt?: "tech-debt.md"
   - Use Cases: "use-cases.md"
-  - Comparisons: "comparisons/all-comparisons.md"
+  - More Comparisons: "comparisons/all-comparisons.md"
   - Integrations: "integrations/all-integrations.md"
   - Miscellaneous: "miscellaneous.md"
   - Contact Us: "contact.md"

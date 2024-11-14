@@ -7,7 +7,7 @@ Flank is a companion for building internal tools. It's similar to Retool, but [w
 
 - [Quickstart](quickstarts/jupyter-fastapi.md) 
 - [Use Cases](use-cases.md)
-- [Comparisons](comparisons/all-comparisons.md)
+- [More comparisons](comparisons/all-comparisons.md)
 
 If you want to get in touch, shoot us an email at angus@flank.cloud
 
