@@ -1,4 +1,4 @@
-# Flank
+# Flank Docs
 
 ![ASCII](assets/flank-ascii-text-black.png#only-light)
 ![ASCII](assets/flank-ascii-text.png#only-dark)
