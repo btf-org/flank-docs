@@ -40,9 +40,8 @@ markdown_extensions:
 nav:
   - Home: "index.md"
   - Quick Start: "quickstarts/jupyter-fastapi.md"
-  - No tech debt?: "tech-debt.md"
+  - How Does It Work?: "how-does-it-work.md"
   - Use Cases: "use-cases.md"
-  - More Comparisons: "comparisons/all-comparisons.md"
+  - Comparisons: "comparisons/all-comparisons.md"
   - Integrations: "integrations/all-integrations.md"
-  - Miscellaneous: "miscellaneous.md"
   - Contact Us: "contact.md"

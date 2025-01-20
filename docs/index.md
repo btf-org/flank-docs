@@ -3,11 +3,13 @@
 ![ASCII](assets/flank-ascii-text-black.png#only-light)
 ![ASCII](assets/flank-ascii-text.png#only-dark)
 
-Flank is a companion for building internal tools. It's similar to Retool, but [without the tech debt](tech-debt.md).
+Flank is a simple way for engineers to safely expose SPROCs/API endpoints to non-engineers 
 
 - [Quickstart](quickstarts/jupyter-fastapi.md) 
+- [How Does It Work?](how-does-it-work.md)
 - [Use Cases](use-cases.md)
-- [More comparisons](comparisons/all-comparisons.md)
+- [Comparisons](comparisons/all-comparisons.md)
+- [Integrations](integrations/all-integrations.md)
 
 If you want to get in touch, shoot us an email at angus@flank.cloud
 
