@@ -1,23 +1,23 @@
 # Use Cases
 
+## Level 1 - Access and Guardrails
 
-With Flank, engineers can (safely) give non-engineers access to 1) frequently-run queries, 2) re-running failed jobs, and 3) urgent CRUD operations.
+- **Access** - Safely give non-engineers access to...
+    - Frequently-run queries
+    - Re-running failed jobs
+    - Urgent CRUD operations
+- **Guardrails** - Quickly configure things like...
+    - Null-handling, min/max, etc.
+    - Dropdowns that are either hardcoded or populated by other functions
 
-### SQL Writers
-- **Get re-use out of every ad-hoc query.** If you get into the practice of wrapping every ad-hoc query in a stored procedure, you'll get an app for free every time you write SQL.
-- **Downloadable history of query results.** When you put a stored proc in Flank, the user can download the result of any run in a CSV.
-- **Offload one-off data correction.** All you need to do is write a parameterized stored procedure. Then Flank handles the guardrails, auditing, RBAC, etc.
+## Level 2 - Automation and Combination
 
-### Backend/Data Engineers
-- **Allow support techs to investigate API issues.** Flank has guardrails that make it safer than Postman / Swagger, so Support Engineers can test endpoints themselves.
-- **Allow business stakeholders to re-run failed jobs.** Create quick apps for teammates to re-run failed jobs, without giving them full access to Airflow, Azure Data Factory, etc.
-- **Review dead letter queues.** With Flank you can pipe the output of one SPROC into the input of another. In other words, you can create tables with buttons really quickly.
+- **Cron** - Set functions to run on a schedule
+- **Bulk Runs** - Run functions over a list of inputs
+- **Tables and Buttons** - Wire up the outputs of one function to the inputs of another
 
-### Frontend Engineers
-- **Schedule jobs.** Set up scheduled jobs without going through backend engineers
-- **Deprecate the long-tail of random admin pages.** Flank is like a file system of SPROCs/API calls. You can have 5000 of them. Put them in folders. Share them with specific people.
-- **Prototype features before writing a line of code.** Instead of building UI to discover whether a tool is actually useful to the Ops team, just put the SQL in Flank and wait and see.
+## Level 3 - Integration
 
-### Engineering Managers
-- **Deprecate unused SPROCs/API endpoints.** If you run your internal tooling through Flank, you can get metrics on which procedures/endpoints are not being used.
-- **Prototype feature upstream of design/frontend.** Typically you have to build a UI for a feature to discover whether it's valuable. With Flank, you can just have the backend engineer write the business logic and immediately create an app. Then track it's usage.
+- **Flank API** - Analyze usage in another tool, trigger functions with AI Agents, etc.
+
+##
