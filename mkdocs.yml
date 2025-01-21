@@ -39,9 +39,9 @@ markdown_extensions:
 
 nav:
   - Home: "index.md"
-  - Quick Start: "quickstarts/jupyter-fastapi.md"
+  # - Quick Start: "quickstarts/jupyter-fastapi.md"
   - How Does It Work?: "how-does-it-work.md"
   - Use Cases: "use-cases.md"
   - Comparisons: "comparisons/all-comparisons.md"
-  - Integrations: "integrations/all-integrations.md"
+  - Technical Details: "integrations/all-integrations.md"
   - Contact Us: "contact.md"
