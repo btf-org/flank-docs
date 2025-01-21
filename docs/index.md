@@ -3,7 +3,7 @@
 ![ASCII](assets/flank-ascii-text-black.png#only-light)
 ![ASCII](assets/flank-ascii-text.png#only-dark)
 
-Flank is a simple way for engineers to safely expose SPROCs/API endpoints to non-engineers. It's like a barebones Retool, or Postman with guardrails, or SwaggerUI on steroids.
+Flank is a simple way for engineers to safely expose SPROCs/APIs to non-engineers. It's like a barebones Retool, or Postman with guardrails, or SwaggerUI on steroids.
 
 <!-- - [Quickstart](quickstarts/jupyter-fastapi.md)  -->
 - [How Does It Work?](how-does-it-work.md)

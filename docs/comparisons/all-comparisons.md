@@ -1,5 +1,5 @@
 # Comparisons
-Flank is like a **barebones Retool**, or **Postman with guardrails**. Unlike other internal tool / BI apps, there's no drag-and-drop, no "extra" JS to write, and nothing to maintain.
+Flank is like a **barebones Retool**, or **Postman with guardrails**, or **SwaggerUI on steroids**.
 
 ## Internal Tools
 
