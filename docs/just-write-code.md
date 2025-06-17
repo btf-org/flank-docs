@@ -10,6 +10,6 @@ That’s not to say that Flank only works with GitHub. It integrates with REST A
 
 Once Flank has discovered your script, you can set it up to run on a schedule. You don’t have to futz around with any cloud services. You **_just write code_**.
 
-You can also build apps for non-technical teammates. Flank has an opinionated UI/UX that requires no frontend work. You **_just write code_**.
+You can also build apps for non-technical teammates. Flank has an opinionated UI/UX that requires no frontend work. Backend devs can ship whole features themselves, by **_just writing code_**.
 
 Flank lays the groundwork for graceful scaling. Developers don’t have to spend time on permissioning, UI debt, compliance, logging, or analytics. They **_just write code_**.
