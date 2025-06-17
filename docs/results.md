@@ -9,7 +9,7 @@ Flank is running in 4 companies:
 
 We've been pleasantly surprised with the results so far. Flank was originally conceived as a prototyping tool, but, as it has become more stable, it has replaced internal tools, BI dashboards, cron jobs, and (in some cases) deployment systems.
 
-Also, people seem to enjoy using the product. Some experiences that we've heard about:
+Also, people seem to enjoy ~~using the product~~ not futzing around with the cloud. Some experiences that we've heard about:
 
 - Customer (engineer) was on his way to dinner and a teammate (non-engineer) asked him to re-run a SQL query. Instead of going back to his desk, he logged into Flank and shared the query like he’d share a Google Doc.
 - Customer had written an R script locally, but then he needed to run it on a schedule with 64 GB of memory. He simply pushed the latest changes to GitHub, went into Flank and set it to run on a schedule. It just worked.
