@@ -1,4 +1,4 @@
-# Early Results
+# Results so far
 
 Flank is running in 4 companies:
 
