@@ -32,7 +32,7 @@ Sometimes your teammate will fat-finger an input. It's easy to drill into what h
 
 **Just write code.**
 
-You can even set up automated alerts by piping the output into another task (e.g. PagerDuty API call). You don't have to think about how to connect a script and an API call.
+You can even set up automated alerts by piping the output into another task (e.g. PagerDuty API call). You don't have to think about how to pipe a script into an API call.
 
 **Just write code.**
 
