@@ -20,7 +20,7 @@ Once Flank has discovered your script, you can set it up to run on a schedule. N
 
 **Just write code.**
 
-You shouldn't have to always be on call. Because we know that script will need to get re-run manually.  And it's crazy to build a whole website with logins and guardrails.
+You shouldn't have be on-call at all hours. Because we know that script will need to get re-run manually.  And it's crazy to build a whole website with logins and guardrails.
 
 **Just write code.**
 
