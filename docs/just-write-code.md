@@ -1,15 +1,49 @@
 # Just write code
 
-The idea of Flank is that you solve business problems by **_just writing code_**. Flank erases the cognitive burden of infrastructure, cloud services, docker, UI/UX, orchestration, permissioning, analytics, audit trails, and compliance.
+**Just write code.**
 
-[ Diagram ? ]
+That is the whole idea of Flank.
 
-To get started is as simple as pushing a script to your GitHub repository. That's it. You **_just write code_**.
+We have lost the ability to quickly solve simple business problems. We have too many tools. We're too specialized. You shouldn't have to sit in a meeting with 6 people to schedule a task or put a button on the page.
 
-That’s not to say that Flank only works with GitHub. It integrates with REST APIs, databases, and cloud functions. Flank doesn’t care where the code runs. The important thing is that you **_just write code_**. 
+**Just write code.**
 
-Once Flank has discovered your script, you can set it up to run on a schedule. You don’t have to futz around with any cloud services. You **_just write code_**.
+To get started, just push a script to a GitHub repository. You shouldn't have to do anything else to start problem solving.
 
-You can also build apps for non-technical teammates. Flank has an opinionated UI/UX that requires no frontend work. Backend devs can ship whole features themselves, by **_just writing code_**.
+**Just write code.**
 
-Flank lays the groundwork for graceful scaling. Developers don’t have to spend time on permissioning, UI debt, compliance, logging, or analytics. They **_just write code_**.
+That’s not to say that Flank only integrates with GitHub. It integrates with REST APIs, databases, and cloud functions. Anything that's runnable, really. You shouldn't have to shoehorn your solution into a programming language you're not comfortable with.
+
+**Just write code.**
+
+Once Flank has discovered your script, you can set it up to run on a schedule. You shouldn't have to futz around with any cloud services or orchestration tools.
+
+**Just write code.**
+
+If your script needs to be re-run, you can safely share it non-technical teammates. You shouldn't have to always be on call. And you shouldn't have to build a whole website with logins and guardrails and permissioning just to take yourself out of the loop.
+
+**Just write code.**
+
+If your script returns a JSON list, Flank will turn it into a table that can be downloaded to CSV. You shouldn't have to think about the simplest data conversions and UI components.
+
+**Just write code.**
+
+If your teammate fat-fingers an input, you can drill into what happened. You shouldn't have to build audit trails for tracking down errors.
+
+**Just write code.**
+
+If your script fails, you can pipe the error output into another task, like a PagerDuty API call that sends you an alert. You shouldn't have to think about how a script and an API call should be connected.
+
+**Just write code.**
+
+If your application is a combination of two tasks (e.g. _get a list of X_ and _take some action on X_), Flank lets you stitch those two tasks together. You shouldn't have to write HTML and CSS to build apps for non-technical teammates.
+
+**Just write code.**
+
+If your product team wants insight into what's being used and what's not, Flank provides analytics on who does what. You shouldn't have to instrument everything.
+
+**Just write code.**
+
+If your engineering manager wants the output from a certain script deleted after 24 hours because it contains PII, Flank provides the framework for quickly configuring that. You shouldn't have to spend half your sprint staying compliant.
+
+**Just write code. ✌**
