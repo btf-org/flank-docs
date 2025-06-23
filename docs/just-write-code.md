@@ -2,7 +2,7 @@
 
 **Just write code.**
 
-This is Flank in a nutshell.
+That is the idea behind Flank.
 
 We've lost the ability to solve simple business problems. Too many tools. Too much specialization. You shouldn't have to sit in a meeting with 6 people to schedule a task.
 
