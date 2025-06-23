@@ -50,7 +50,7 @@ As your company grows, your engineering manager will want to stay compliant. Fla
 
 There is no DDL or YAML or learning curve for any of this. You (the engineer) are the scarce resource. You shouldn't have to spent time learning yet another tool.
 
-**Just write code. ✌**
+**Just write code.**
 
 Flank houses no "application logic" at all. No loops, no conditionals. There's no lock-in because you control your code. You can even host Flank yourself.
 
