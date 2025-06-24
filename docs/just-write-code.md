@@ -16,7 +16,7 @@ You could also wire up an API or a database — really, anything that can be con
 
 **Just write code.**
 
-Once Flank has discovered your script, you can run it on a schedule. You don't have to deal with an orchestration tool.
+Once Flank has discovered your script, you can run it on a schedule. You don't have to deal with an scheduling tool.
 
 **Just write code.**
 
@@ -54,4 +54,4 @@ Flank houses no "application logic" at all. No loops, no conditionals. There's n
 
 **Just write code. ✌**
 
-Flank is all about what you **don't** have to think about: ~~what programming language to use, where your code is running, orchestration, a website with logins, user guardrails, basic UI components, audit trails, connecting API calls, building frontends, analytics, compliance.~~
+Flank is all about what you **don't** have to think about: ~~what programming language to use, where your code is running, scheduling, a website with logins, user guardrails, CSS rules, audit trails, connecting API calls, building frontends, analytics, compliance.~~
