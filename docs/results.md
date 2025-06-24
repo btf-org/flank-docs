@@ -29,7 +29,7 @@ With Flank, they can quickly wire together API calls to make safe, reusable apps
 
 **Eliminating tools, meetings, and messages.**
 
-At a 350-person startup, the communication overhead is real. With this company (marketplace, with warehouse) every little feature required a meeting between a PM, a designer, a React developer, a Database Engineer, and an API engineer. Also, their database engineers were swamped with urgent requests from the Operations team.
+At a 350-person startup, the communication overhead is real. With this company (marketplace, with warehouse) every little feature required a meeting between a PM, a designer, a React Developer, a Database Engineer, and an API engineer. Also, their Database Engineers were swamped with urgent requests from the Operations team.
 
 With Flank, they ship like they're a small startup again. Their Database Engineer can deliver reusable tools as quickly as he can service ad-hoc requests. He can schedule jobs and set up alerts without any Azure help. And he can iterate with users directly, without a PM having to intermediate.
 
