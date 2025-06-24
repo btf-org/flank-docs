@@ -8,7 +8,7 @@ We've lost the ability to solve simple business problems because we're swamped w
 
 **Just write code.**
 
-To get started with Flank, write a script and push it to GitHub. That's it. It'll show up in the Flank web app, you can run it, and it'll just work.
+To use Flank, write a script and push it to GitHub. That's it. It'll show up in the Flank web app, you can run it, and it'll just work.
 
 **Just write code.**
 
@@ -20,9 +20,7 @@ Once Flank has discovered your script, you can set it up to run on a schedule. N
 
 **Just write code.**
 
-You shouldn't have to be on-call at all hours. Because you know that script will need to get manually re-run at some point.  And it's crazy to build a whole website with logins and guardrails.
-
-**Just write code.**
+At some point you'll be asked to manually re-run that script. But it's crazy for you to be on-call all the time.  And even crazier to build a whole website with logins and guardrails.
 
 Flank automatically creates UI around your script. Datepickers for input, tables for output. It's intuitive for users, and incredibly fast for developers.
 
