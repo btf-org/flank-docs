@@ -32,7 +32,7 @@ Sometimes your teammate will fat-finger an input. It's easy to drill into what h
 
 **Just write code.**
 
-You can even set up automated alerts by piping the output into another task (e.g. PagerDuty API call). You don't have to think about how to pipe a script into an API call.
+You can even set up automated alerts by piping the output into another task (e.g. PagerDuty API call). You don't have to write any code to pipe a script into an API call.
 
 **Just write code.**
 
@@ -40,7 +40,7 @@ The ability to connect two tasks is quite powerful. _Get a list of X_ and then _
 
 **Just write code.**
 
-Once people are using Flank, the product team will want insights into user behavior. Flank provides analytics on who does what,  when. You shouldn't have to instrument everything.
+Once people are using Flank, the product team will want insights into user behavior. Flank provides analytics on who does what,  when. You don't have to build any instrumentation.
 
 **Just write code.**
 
