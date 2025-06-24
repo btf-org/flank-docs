@@ -1,6 +1,13 @@
 # Results so far
 
-Flank is running in 4 companies. We've been pleasantly surprised with the results so far.
+Flank is running in 4 companies: 
+
+- 1-person data science operation
+- 10-person SaaS company
+- 60-person SaaS company
+- 300-person marketplace with warehouse
+
+We've been pleasantly surprised with the results so far. 
 
 ## How they see Flank
 - **1-person data science operation** - _Just write code_. In other words, don't spend time on things that aren't core data science tasks: ~~configuring AWS Batch jobs, containerizing R scripts, setting up Airflow pipelines, searching through Cloudwatch logs, constantly checking job statuses, memory profiling, breaking down the costs of big runs.~~
@@ -15,10 +22,14 @@ Flank is running in 4 companies. We've been pleasantly surprised with the result
 - **300-person marketplace with warehouse** - Database Engineer punched in the DB creds and Flank discovered hundreds of existing SPROCs
 
 ## Integrations
-- **1-person data science operation** - R scripts on GitHub
-- **10-person SaaS company** - AWS Lambdas (Python)
-- **60-person SaaS company** - REST APIs (internal and external)
-- **300-person marketplace with warehouse** - MSSQL SPROCs, Postgres Functions, REST APIs (external)
+| Code               | Discovered Through... | Executed on...  |
+| ------------------ | --------------------- | --------------- |
+| R scripts          | GitHub                | AWS Batch       |
+| Python functions   | AWS Lambda            | AWS Lambda      |
+| API (internal)     | Postman export        | Customer infra  |
+| API (3rd-party)    | Postman export        | 3rd-party infra |
+| MSSQL SPROCs       | MSSQL system table    | MSSQL           |
+| Postgres Functions | Postgres system table | Postgres        |
 
 ## Self-hosting
 |Company                        |Flank site/API|Job execution|
