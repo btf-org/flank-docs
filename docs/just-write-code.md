@@ -4,15 +4,15 @@
 
 That is the idea behind Flank.
 
-We've lost the ability to solve simple business problems. Too many tools. Too much specialization. You shouldn't have to sit in a meeting with 6 people to schedule a task.
+We've lost the ability to solve simple business problems because we're swamped with tools and meetings.
 
 **Just write code.**
 
-To get started, push a script to GitHub. That's it. It'll show up in the Flank web app.
+To get started with Flank, write a script and push it to GitHub. That's it. It'll show up in the Flank web app, you can run it, and it'll just work.
 
 **Just write code.**
 
-You could also wire up an API or a database — anything that can be containerized or run over the internet. Flank doesn't care whether the code runs on your infrastructure or ours.
+You could also wire up an API or a database — really, anything that can be containerized or run over the internet. Flank doesn't care whether the code runs on your infrastructure or ours.
 
 **Just write code.**
 
@@ -20,7 +20,7 @@ Once Flank has discovered your script, you can set it up to run on a schedule. N
 
 **Just write code.**
 
-You shouldn't have be on-call at all hours. Because you know that script will need to get re-run manually at some point.  And it's crazy to build a whole website with logins and guardrails.
+You shouldn't have to be on-call at all hours. Because you know that script will need to get manually re-run at some point.  And it's crazy to build a whole website with logins and guardrails.
 
 **Just write code.**
 
