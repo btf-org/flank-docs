@@ -7,7 +7,7 @@ Flank is running in 4 companies:
 - 60-person SaaS company
 - 350-person marketplace (with a warehouse)
 
-Even at different sizes/stages, the effect has been the same:
+In a way, we've been surprised -- even at different sizes/stages, the effect of Flank has been the same:
 
 **Eliminating tools, meetings, and messages.**
 
