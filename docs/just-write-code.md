@@ -16,7 +16,7 @@ You could also wire up an API or a database — really, anything that can be con
 
 **Just write code.**
 
-Once Flank has discovered your script, you can set it up to run on a schedule. No need to go into a cloud portal or configure an orchestration tool.
+Once Flank has discovered your script, you can run it on a schedule. You don't have to deal with an orchestration tool.
 
 **Just write code.**
 
