@@ -11,7 +11,7 @@ In a way, we've been surprised -- even at different sizes/stages, the effect of 
 
 **Eliminating tools, meetings, and messages.**
 
-At any 1-person company, it's all about the tools. In this case, the Data Scientist had to dive into AWS whenever an R script needs to be run in parallel, or on a schedule, or on a machine with more memory.
+At a 1-person data science operation, the Data Scientist had to dive into AWS whenever an R script needed to be run in parallel, or on a schedule, or on a machine with more memory.
 
 With Flank, he just writes R scripts. No AWS.
 
@@ -29,7 +29,7 @@ With Flank, they can quickly wire together API calls to make safe, reusable apps
 
 **Eliminating tools, meetings, and messages.**
 
-At a 350-person startup, the communication overhead is real. With this company (marketplace, with warehouse) every little feature required a meeting between a PM, a designer, a React Developer, a Database Engineer, and an API engineer. Also, their Database Engineers were swamped with urgent requests from the Operations team.
+At a 350-person marketplace (with a warehouse), every little feature required a meeting between a PM, a designer, a React Developer, a Database Engineer, and an API engineer. Also, their Database Engineers were swamped with urgent requests from the Operations team.
 
 With Flank, they ship like they're a small startup again. Their Database Engineer can deliver reusable tools as quickly as he can service ad-hoc requests. He can schedule jobs and set up alerts without any Azure help. And he can iterate with users directly, without a PM having to intermediate.
 
