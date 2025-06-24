@@ -33,6 +33,6 @@ With Flank, they can quickly wire together API calls to make safe, reusable apps
 
 At a 350-person marketplace (with a warehouse), every little feature now requires a meeting between a PM, a designer, a React developer, a database engineer, and an API engineer. Also, their database engineers are swamped with urgent requests from the Operations team.
 
-With Flank, they can ship like a tiny startup again. Their database engineer can deliver reusable tools without a designer and frontend developer. He can schedule jobs and set up alerts without any Azure help. He can iterate with users without a PM intermediating.
+With Flank, they can ship like a tiny startup again. Their database engineer can deliver reusable tools without a designer and frontend developer. No more repeated data requests. He can schedule jobs and set up alerts without any Azure help. And he can iterate with users without a PM intermediating.
 
 **Eliminating tools, meetings, and messages. ✌**
